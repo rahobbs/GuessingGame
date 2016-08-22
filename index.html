@@ -1,88 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Guessing Game</title>
+<head>
+  <title>Guessing Game</title>
+  <link rel="stylesheet" type="text/css" href="style.css">  
+</head>
+<body>
 
-    <!-- Bootstrap and CSS here-->
-    <style>
-      .center {
-        text-align: center;
-      }
+  <div id='app'>
 
-      ul {
-          list-style: none;
-          padding: 0;
-      }
+    <div id='headers'>
+      <h1 id="title">Guessing Game<h1>
+        <h3 id="subtitle">Choose a number between 1 - 100!</h3>
+      </div>
 
-      img {
-          display: inline;
-          width: 200px;
-          height: 100px;
-      }
-
-      #footer {
-          width: 100%;
-          border-top: solid 2px black;
-          background-color: white;
-          position: fixed;
-          bottom: 0;
-      }
-    </style>
-
-  </head>
-  <body>
-
-      <div id='app'>
-
-        <div id='headers'>
-          <h1 id="title">Guessing Game<h1>
-          <h3 id="subtitle">Choose a number between 1 - 100!</h3>
+      <div id='main'>
+        <div id='input-parent'>
+          <form>
+            <input type="text" placeholder="Guess a Number" id="guess" autofocus="autofocus"><br>
+            <button type="button">Submit</button>
+          </form>
         </div>
 
-        <div id='main'>
-          <div id='input-parent'>
-            <form>
-              <input type="text" placeholder="Guess a Number" id="guess" autofocus="autofocus"><br>
-              <button type="button">Submit</button>
-            </form>
-          </div>
+        <div id='guesses'>
+          <ul>
+            <li>guess 1</li>
+            <li>guess 2</li>
+            <li>guess 3</li>
+            <li>guess 4</li>
+          </ul>
+        </div>
 
-          <div id='guesses'>
-            <!-- unordered list of guesses -->
-            <ul>
-              <li>guess 1</li>
-              <li>guess 2</li>
-              <li>guess 3</li>
-              <li>guess 4</li>
-            </ul>
-          </div>
-
-          <div id="menu-btns">
-            <button type="button">Reset</button>
-            <button type="button">Hint</button>
-          </div>
+        <div id="menu-btns">
+          <button type="button">Reset</button>
+          <button type="button">Hint</button>
         </div>
       </div>
+    </div>
 
 
 
     <div id='footer'>
-        <div>
-          <div class=''>
-            <img src='fa-logo@2x.png'></img>
-          </div>
-
-          <div class=''>
-            <h4>Project by Rachael Hobbs</h4>
-          </div>
-
-          <div class=''>
-            <img src='grace_hopper_academy.png'></img>
-          </div>
-
-
+      <div>
+        <div class=''>
+          <img src='fa-logo@2x.png'></img>
         </div>
+
+        <div class=''>
+          <h4>Project by Rachael Hobbs</h4>
+        </div>
+
+        <div class=''>
+          <img src='grace_hopper_academy.png'></img>
+        </div>
+
+
+      </div>
     </div>
 
   </body>
-</html>
+  </html>
