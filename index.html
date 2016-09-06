@@ -2,54 +2,55 @@
 <html lang="en">
 <head>
   <title>Guessing Game</title>
-  <link rel="stylesheet" type="text/css" href="style.css">  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
 
-  <div id='app'>
+  <div id='app' class="center container">
 
     <div id='headers'>
-      <h1 id="title">Guessing Game<h1>
-        <h3 id="subtitle">Choose a number between 1 - 100!</h3>
+      <h1 id="title" class="center">Guessing Game<h1>
+        <h3 id="subtitle" class="center">Choose a number between 1 - 100!</h3>
       </div>
 
       <div id='main'>
-        <div id='input-parent'>
+        <div id='input-parent' class="center">
           <form>
-            <input type="text" placeholder="Guess a Number" id="guess" autofocus="autofocus"><br>
-            <button type="button">Submit</button>
+            <input id="player-input" type="text" placeholder="Guess a Number"  margin=""autofocus="autofocus"><br>
+            <button type="button" class="btn btn-primary" id="submit-btn" class="center">Submit</button>
           </form>
         </div>
 
-        <div id='guesses'>
+        <div id='guesses' class="center">
           <ul>
-            <li>guess 1</li>
-            <li>guess 2</li>
-            <li>guess 3</li>
-            <li>guess 4</li>
+            <li class="guess">guess 1</li>
+            <li class="guess">guess 2</li>
+            <li class="guess">guess 3</li>
+            <li class="guess">guess 4</li>
           </ul>
         </div>
 
-        <div id="menu-btns">
-          <button type="button">Reset</button>
-          <button type="button">Hint</button>
+        <div id="menu-btns" class="center">
+          <button id="reset-btn" class="btn btn-danger" type="button">Reset</button>
+          <button id="hint-btn" class="btn btn-danger"type="button">Hint</button>
         </div>
       </div>
     </div>
 
 
 
-    <div id='footer'>
-      <div>
-        <div class=''>
+    <div id='footer' class="center">
+      <div class="row">
+        <div class='col-md-4'>
           <img src='fa-logo@2x.png'></img>
         </div>
 
-        <div class=''>
+        <div class='col-md-4'>
           <h4>Project by Rachael Hobbs</h4>
         </div>
 
-        <div class=''>
+        <div class='col-md-4'>
           <img src='grace_hopper_academy.png'></img>
         </div>
 
