@@ -2,17 +2,57 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  background-image: url("background.jpg");
+  background-size: 200% 200%;
+
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(256, 256, 256, 0.5);
+}
+
 .center {
   text-align: center;
 }
 
+#headers{
+  margin-top: 60px;
+}
+
 #submit-btn{
   margin: 18px;
+  font-size: 20px;
+}
+
+#hint-btn{
+  margin: 18px;
+  font-size: 20px;
+}
+
+#reset-btn{
+  margin: 18px;
+  font-size: 20px;
 }
 
 ul {
   list-style: none;
   padding: 0;
+}
+
+li {
+  display: inline;
+  border: solid black 2px;
+  border-radius: 10%;
+  font-size: 30px;
+  padding: 0 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 9px;
+  margin-right: 9px;
+  background-color: white;
 }
 
 img {
