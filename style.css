@@ -8,6 +8,10 @@ body {
 
 }
 
+#title {
+  font-size: 55px;
+}
+
 #app {
   width: 100%;
   height: 100vh;
@@ -18,6 +22,19 @@ body {
   text-align: center;
 }
 
+#player-input {
+  border-radius: 50%;
+  font-size: 60px;
+  height: 160px;
+  width: 160px;
+}
+
+#input-parent {
+  width: 160px;
+  margin: 5% auto 50px;
+  position: relative;
+}
+
 #headers{
   margin-top: 60px;
 }
@@ -25,6 +42,12 @@ body {
 #submit-btn{
   margin: 18px;
   font-size: 20px;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 95px;
+  left: 95px;
 }
 
 #hint-btn{
