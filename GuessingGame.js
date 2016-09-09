@@ -3,7 +3,7 @@ function generateWinningNumber(){
 }
 
 function shuffle(array){
-  var len = array.length
+  var len = array.length;
  // While there remain elements to shuffle…
  while (len) {
    // Pick a remaining element…
@@ -24,7 +24,7 @@ function Game(){
 
 Game.prototype.difference = function(){
   return Math.abs(this.playersGuess - this.winningNumber);
-}
+};
 
 Game.prototype.isLower = function(){
   if(this.playersGuess < this.winningNumber){
@@ -32,16 +32,16 @@ Game.prototype.isLower = function(){
   } else{
     return false;
   }
-}
+};
 
 Game.prototype.playersGuessSubmission = function(num){
   this.playersGuess = num;
   if( num > 100 || num < 1 || typeof num != "number"){
-    throw "That is an invalid guess."
+    throw "That is an invalid guess.";
   } else{
       return this.checkGuess();
   }
-}
+};
 
 Game.prototype.checkGuess = function(){
   var highLow = "";
@@ -66,7 +66,7 @@ Game.prototype.checkGuess = function(){
         return "You're ice cold!";
       }
   }
-}
+};
 
 function newGame(){
   return new Game();
@@ -81,7 +81,7 @@ Game.prototype.provideHint = function(){
   hintArray[2] = generateWinningNumber();
 
   return shuffle(hintArray);
-}
+};
 
 function makeAGuess(game) {
     var guess = $('#player-input').val();
@@ -127,7 +127,7 @@ $(document).ready(function() {
         if ( event.which == 13 ) {
            makeAGuess(game);
         }
-    })
+    });
 
     $('#reset-btn').click(function(e){
       game = new Game();
@@ -138,9 +138,9 @@ $(document).ready(function() {
       $('#guess2').text("-");
       $('#guess3').text("-");
       $('#guess4').text("-");
-    })
+    });
 
     $('#hint-btn').click(function(e){
       $('#title').text(game.provideHint);
-    })
+    });
  });
